@@ -135,7 +135,8 @@ button:hover {
 .rates-table {
   border-collapse: collapse;
   /*убираем отступы между границами таблицы*/
-  margin: auto;
+  margin: 0 auto;
+  width: 940px;
 }
 
 th,
@@ -401,7 +402,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   color: #fff;
 }
 
-@media (max-width:1130px) {
+@media screen and (max-width:1130px) {
   .header {
     margin-bottom: 100px;
   }
@@ -421,6 +422,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
   .main-img {
     align-self: center;
+    width: 100%;
   }
 
   .account-wrapper {
@@ -435,9 +437,15 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   .create-account-form {
     align-self: center;
   }
+
+  .rates-table-wrapper {
+    overflow-x: auto;
+    width: 100%;
+    max-width: 940px;
+  }
 }
 
-@media (max-width:768px) {
+@media screen and (max-width:576px) {
   .menu-list {
     display: block;
     position: absolute;
@@ -482,8 +490,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     font-size: 50px;
   }
 
-  .main-img {
+  /* .main-img {
     width: 100%;
     height: 342px;
-  }
+  } */
 }
